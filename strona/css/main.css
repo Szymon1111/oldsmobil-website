@@ -1,0 +1,104 @@
+@font-face {
+    font-family: title-font;
+    src: url(../fonts/title-font.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 15px 0px;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url(../img/home-image.jpg);
+    background-size: cover;
+}
+
+.page-header{
+    font-family: title-font;
+    font-size: 84px;
+    font-weight: 400;
+
+    text-shadow: 2px 2px black;
+
+    color:white;
+}
+
+.page-subheader{
+    font-weight: 400;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+
+.page-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    color: white;
+
+    padding: 30px;
+
+    text-shadow: 2px 2px black;
+
+    transition: padding .5s;
+}
+
+.page-nav-min{
+    background-color: rgba(61, 61, 61, 0.05);
+    text-shadow: none;
+    padding: 10px;
+}
+
+.nav-element{
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 400;
+
+    /* text-transform: uppercase; */
+    
+    transition: .5s;
+}
+
+.nav-element:hover{
+    color: #f55c47;
+    cursor: pointer;
+}
+
+.section-title{
+    font-family: title-font;
+    font-size: 56px;
+    font-weight: 400;
+}
+
+section{
+    width: 100%;
+    padding: 50px;
+}
