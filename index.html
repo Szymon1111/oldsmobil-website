@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oldsmobil Pub</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <section class="home">
+        <h1 class="page-header">Oldsmobil Pub</h1>
+        <h3 class="page-subheader">drinks & food</h3>
+    </section>
+
+    <nav class="page-nav">
+
+        <div class="logo-min">Oldsmobil Pub</div>
+
+        <div class="nav-elements flex-row">
+            <div class="nav-element" onclick="scrollToElement('.home')">home</div>
+            <div class="nav-element" onclick="scrollToElement('.about-us')">o nas</div>
+            <div class="nav-element" onclick="scrollToElement('.menu')">menu</div>
+            <div class="nav-element" onclick="scrollToElement('.info')">info</div>
+        </div>
+
+        <div class="page-nav-background"></div>
+    </nav>
+
+    <section class="about-us">
+        <h1 class="section-title">O nas</h1>
+        <p></p>
+    </section>
+
+    <section class="menu">
+        <h1 class="section-title">Menu</h1>
+    </section>
+
+    <section class="info">
+        <h1 class="section-title">Informacje</h1>
+
+        <div class="info-content flex-row">
+            
+            <div class="google-map">
+                <!-- <h3>Gdzie nas znajdziesz?</h3> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10245.164372377305!2d19.9419646!3d50.0621099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f1f95f6102e8ff2!2sOldsmobil%20Pub!5e0!3m2!1sen!2spl!4v1623615463802!5m2!1sen!2spl" style="border:0; width:50vw; height: 30vw;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="flex-column">
+                <div class="contact">
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li>12 425 40 00</li>
+                        <li>puboldsmobil@gmail.com</li>
+                    </ul>
+                </div>
+                
+                <div class="hours">
+                    <h3>Godziny otwarcia</h3>
+                    <ul>
+                        <li>Pn. od 16:00</li>
+                        <li>Wt. od 16:00</li>
+                        <li>Śr. od 16:00</li>
+                        <li>Czw. od 16:00</li>
+                        <li>Pt. od 16:00</li>
+                        <li>Sob. od 16:00</li>
+                        <li>Niedź. od 16:00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/scrollTo.js"></script>
+</body>
+</html>
