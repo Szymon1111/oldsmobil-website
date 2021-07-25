@@ -9,47 +9,81 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css?1">
+    <link rel="stylesheet" href="css/mobile.css?1">
 </head>
 <body>
     
     <section class="home">
-        <h1 class="page-header">Oldsmobil Pub</h1>
-        <h3 class="page-subheader">drinks & food</h3>
+        <!-- <h1 class="page-header">Oldsmobil Pub</h1>
+        <h3 class="page-subheader">drinks & food</h3> -->
+
+        <img src="./img/logo.png" alt="Oldsmobil Pub" class="logo">
     </section>
 
     <nav class="page-nav">
 
-        <div class="logo-min">Oldsmobil Pub</div>
+        <!-- <div class="logo-min">Oldsmobil&nbspPub</div> -->
+        <img src="./img/logo-min.png" alt="Oldsmobil&nbspPub" class="logo-min">
 
         <div class="nav-elements flex-row">
             <div class="nav-element" onclick="scrollToElement('.home')">home</div>
-            <div class="nav-element" onclick="scrollToElement('.about-us')">o nas</div>
-            <div class="nav-element" onclick="scrollToElement('.menu')">menu</div>
+            <div class="nav-element" onclick="scrollToElement('.about-us')">o&nbspnas</div>
+            <div class="nav-element" onclick="scrollToElement('.menu')">karta&nbspdań</div>
+            <div class="nav-element" onclick="scrollToElement('.gallery')">galeria</div>
             <div class="nav-element" onclick="scrollToElement('.info')">info</div>
         </div>
 
+        <div class="menu-text">menu</div>
+
         <div class="page-nav-background"></div>
+
     </nav>
 
     <section class="about-us">
-        <h1 class="section-title">O nas</h1>
-        <p></p>
+        <h1 class="section-title">Kilka słów o lokalu</h1>
+
+        <div class="about-us-content">
+            <img class="about-us-image" src="./img/old2.jpg" alt="">
+            <p class="about-us-text">
+                Nie jesteśmy kolejną krzykliwą knajpą z tabunem nachalnych promotorów&nbspi&nbspprzesadzoną ilością fikuśnych drinków  w menu. <br><br>
+                My wierzymy, że klasyka obroni się sama. <br><br>
+                Pub Oldsmobil to dobre piwo, domowa kuchnia, staromodny wystrój z brytyjskim sznytem&nbspi&nbspprzyjazna atmosfera okraszona muzycznymi przebojami z poprzedniego wieku. <br><br>
+                Za to wszystko jesteśmy cenieni już od 1993 roku.
+            </p>
+        </div>
     </section>
 
     <section class="menu">
-        <h1 class="section-title">Menu</h1>
+        <h1 class="section-title">Karta&nbspdań</h1>
+
+        <div class="menu-content">
+            <img class="big-menu-img" src="./img/big_menu.png" alt="">
+        </div>
+    </section>
+
+    <section class="gallery">
+
+        <h1 class="section-title">Galeria</h1>
+
+        <div class="gallery-slider flex-row">
+            <div class="gallery-button" id="previous-image"></div>
+
+            <img class="gallery-image" src="./img/gallery/1.jpg">
+
+            <div class="gallery-button" id="next-image"></div>
+        </div>
+        
     </section>
 
     <section class="info">
-        <h1 class="section-title">Informacje</h1>
+        <h1 class="section-title">Przydatne informacje</h1>
 
         <div class="info-content flex-row">
             
-            <div class="google-map">
-                <!-- <h3>Gdzie nas znajdziesz?</h3> -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10245.164372377305!2d19.9419646!3d50.0621099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f1f95f6102e8ff2!2sOldsmobil%20Pub!5e0!3m2!1sen!2spl!4v1623615463802!5m2!1sen!2spl" style="border:0; width:50vw; height: 30vw;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10245.164372377305!2d19.9419646!3d50.0621099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f1f95f6102e8ff2!2sOldsmobil%20Pub!5e0!3m2!1sen!2spl!4v1623615463802!5m2!1sen!2spl" style="border:0;" allowfullscreen="" loading="lazy"class="google-map"></iframe>
 
             <div class="flex-column">
                 <div class="contact">
@@ -66,19 +100,32 @@
                         <li>Pn. od 16:00</li>
                         <li>Wt. od 16:00</li>
                         <li>Śr. od 16:00</li>
-                        <li>Czw. od 16:00</li>
-                        <li>Pt. od 16:00</li>
+                        <li>Czw. od 12:00</li>
+                        <li>Pt. od 12:00</li>
                         <li>Sob. od 16:00</li>
                         <li>Niedź. od 16:00</li>
                     </ul>
+                </div>
+
+                <div class="social-media">
+                    <a href="https://www.facebook.com/oldsmobilpub/" target="_blank">
+                        <img class="social-media-icon" src="./img/facebook.png" alt="FB">
+                    </a>
+                    <a href="https://www.instagram.com/puboldsmobil/" target="_blank">
+                        <img class="social-media-icon" src="./img/instagram.png" alt="IG">
+                    </a>
                 </div>
             </div>
         </div>
 
     </section>
 
+    <div class="icons-info">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
 
     <script src="./js/main.js"></script>
     <script src="./js/scrollTo.js"></script>
+    <script src="./js/gallery.js"></script>
+
 </body>
 </html>
